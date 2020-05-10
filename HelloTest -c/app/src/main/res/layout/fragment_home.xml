@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/zz3"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_ing"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/doing"
+            android:checked="true"
+            android:text="进行中"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_done"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/done"
+            android:text="已完成"></RadioButton>
+    </RadioGroup>
+
+    <ListView
+        android:layout_below="@+id/rg_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/canteen_list"
+        ></ListView>
+
+    <ImageButton
+        android:id="@+id/ib_top"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/top"
+        android:visibility="visible" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zz3"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品管理"
+            android:layout_marginLeft="140dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"></TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/add_food"
+            android:layout_height="wrap_content"
+            android:text="+"></Button>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_food_list"
+        android:layout_below="@+id/zz3"></ListView>
+
+
+</RelativeLayout>
