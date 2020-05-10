@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:scaleType="fitCenter"
+            android:src="@drawable/c_me"
+            ></ImageView>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableTop="@drawable/like"
+        android:gravity="center"
+        android:id="@+id/me_order_collect"
+        android:background="@drawable/pmd_pull"
+        android:text="订单收藏"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:drawableTop="@drawable/modify_head"
+        android:gravity="center"
+        android:background="@drawable/pmd_pull"
+        android:text="修改头像"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:drawableTop="@drawable/pwd"
+        android:gravity="center"
+        android:id="@+id/me_modify_pwd"
+        android:background="@drawable/pmd_pull"
+        android:text="修改密码"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/pmd_pull"
+        android:drawableTop="@drawable/logout"
+        android:gravity="center"
+        android:id="@+id/me_logout"
+        android:text="退出账户"></Button>
+
+</LinearLayout>

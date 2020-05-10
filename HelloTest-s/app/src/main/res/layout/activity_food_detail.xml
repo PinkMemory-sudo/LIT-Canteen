@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.FoodDetailActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/hs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/food0_img"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:background="@color/colorPrimary"
+                android:padding="1dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/food1_img"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="1dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/food2_img"
+                android:layout_width="400dp"
+                android:layout_height="300dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="1dp"></ImageView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/hs"
+        android:layout_marginTop="15dp"
+        android:layout_above="@id/zz5"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/zz1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hs"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="评分："
+                    android:textColor="#000000"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/food_detail_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="折扣："
+                    android:textColor="#000000"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/food_detail_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp"></TextView><TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="折后价："
+                    android:textColor="#000000"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:id="@+id/food_detail_discount_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13.00"
+                    android:textColor="#ff0000"
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zz2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zz1"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="成分："
+                    android:textColor="#000000"
+                    android:textSize="20sp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汤清、萝卜、辣椒油红、香菜、蒜苗、面条"
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zz2"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:text="        兰州牛肉拉面，又称兰州清汤牛肉拉面，是“中国十大面条”之一，是甘肃省兰州地区的风味小吃。它以“汤镜者清，肉烂者香，面细者精”的独特风味和“一清二白三红四绿五黄”赢得了国内乃至全世界顾客的好评。并被中国烹饪协会评为三大中式快餐之一，得到美誉“中华第一面”。。其制作的五大步骤无论从选料、和面、饧面，还是溜条和拉面，都巧妙地运用了所含成分的物理性能，即面筋蛋白质的延伸性和弹性"
+                android:textSize="20sp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="#000000 "
+                android:text="评论"></TextView>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food_comment">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zz5"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:onClick="prefood"
+            android:text="预定"></Button>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:onClick="addfood"
+            android:text="加入购物车"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

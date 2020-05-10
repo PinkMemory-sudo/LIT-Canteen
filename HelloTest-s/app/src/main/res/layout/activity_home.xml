@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <!--    标题栏-->
+<!--    <include layout="@layout/titlebar"></include>-->
+
+    <!--    帧布局-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+    <!--    radiogriup-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/home_food"
+            android:text="点餐"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_car"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/home_car"
+            android:text="购物车"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/home_order"
+            android:text="订单"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/home_me"
+            android:text="我"></RadioButton>
+    </RadioGroup>
+</LinearLayout>

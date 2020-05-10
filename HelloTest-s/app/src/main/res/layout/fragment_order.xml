@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zz3"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单"
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@+id/zz3"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_ing"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/doing"
+            android:checked="true"
+            android:text="进行中"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_done"
+            style="@style/home_bottom_radiobutton"
+            android:drawableTop="@drawable/done"
+            android:text="已完成"></RadioButton>
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_list"
+        android:layout_below="@+id/rg_main"></ListView>
+</RelativeLayout>

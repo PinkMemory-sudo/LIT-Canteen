@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#000"
+        android:scaleType="centerCrop"></ImageView>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/food_name_grid"
+            android:gravity="center"
+            android:text="土豆盖浇面"
+            android:textColor="#00000f"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            ></TextView>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/food_price_grid"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="13元/份"
+            android:textColor="#00000f"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

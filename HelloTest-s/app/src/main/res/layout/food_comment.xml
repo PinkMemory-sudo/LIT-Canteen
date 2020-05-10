@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/food_comment_img1"
+                android:layout_width="150dp"
+                android:scaleType="centerCrop"
+                android:layout_height="150dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/food_comment_img2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/food_comment_img3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"></ImageView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/food_coment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="还行"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"></TextView>
+</LinearLayout>
